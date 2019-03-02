@@ -2,6 +2,8 @@ const discord = require ('discord.js');
 
 var client = new discord.Client();
 
+client.login(process.env.TOKEN)
+
 client.on ("ready",() => {
 
 console.log("ready!");
@@ -35,4 +37,4 @@ if (msg.startsWith (prefix + "send")) {
 
 });
 
-client.login(process.env.TOKEN)
+client.login (token);
