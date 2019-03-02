@@ -36,5 +36,3 @@ if (msg.startsWith (prefix + "send")) {
 }
 
 });
-
-client.login (token);
