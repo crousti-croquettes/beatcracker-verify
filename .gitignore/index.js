@@ -12,10 +12,6 @@ client.user.setActivity("created by sneaky");
 
 });
 
-const fs = require("fs");
-
-client.msgs = require("./msgs.json")
-
 const prefix = "b!";
 
 client.on ("message",(message) => {
