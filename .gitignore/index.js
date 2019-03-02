@@ -27,7 +27,7 @@ if (msg.startsWith (prefix + "send")) {
     message.delete();
     mentionMessage = message.content.slice (7);
     mention.sendMessage (mentionMessage);
-    message.channel.send ("confirmation envoyée !");
+    message.channel.send ("Confirmation envoyée !");
 
 }
 
