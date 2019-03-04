@@ -26,7 +26,7 @@ if (msg.startsWith (prefix + "send")) {
     if (mention == null) { return; }
     message.delete();
     mentionMessage = message.content.slice (7);
-    mention.sendMessage (mentionMessage,("test");
+    mention.sendMessage ("Vous avez été validé, vous êtes maintenant producteur confirmé.");
     message.channel.send ("Confirmation envoyée !");
 
 }
