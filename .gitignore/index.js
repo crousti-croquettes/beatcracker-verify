@@ -26,8 +26,11 @@ if (msg.startsWith (prefix + "send")) {
     if (mention == null) { return; }
     message.delete();
     mentionMessage = message.content.slice (7);
-    mention.sendMessage (message.author + 'Vous avez été validé, vous êtes maintenant producteur confirmé.');
+    mention.sendMessage (message.author + ' Vous avez été validé, vous êtes maintenant producteur confirmé.');
     message.channel.send ("Confirmation envoyée !");
+    
+    let memberRole = message.member.guild.roles.find("name", "Producteur ✔️");
+    message.member.addRole(memberRole);
 
 }
 
