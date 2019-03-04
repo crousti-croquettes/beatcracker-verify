@@ -12,6 +12,12 @@ client.user.setActivity("created by sneaky");
 
 });
 
+client.on("guildMemberAdd", function(member)
+{
+  let memberRole = message.member.guild.roles.find("name", "Producteur ✔️");
+    message.member.addRole(memberRole);  
+});    
+
 const prefix = "b!";
 
 client.on ("message",(message) => {
