@@ -21,7 +21,7 @@ member.addRole(role);
 
 client.on ("message",(message) => {
 
-    msg = message.content.toLowerCase();
+   var msg = message.content.toLowerCase();
     if (message.author.bot) return;
     
 
