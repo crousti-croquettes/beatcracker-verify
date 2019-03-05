@@ -36,7 +36,7 @@ if (msg.startsWith (prefix + "send")) {
     message.channel.send ("Confirmation envoyée !");
     
     let memberRole = message.member.guild.roles.find("name", "Producteur ✔️");
-    message.member.addRole(memberRole.);
+    message.member.addRole(memberRole);
 
 }
 
