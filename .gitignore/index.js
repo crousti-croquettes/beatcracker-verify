@@ -14,8 +14,8 @@ client.user.setActivity("created by sneaky");
 
 client.on("guildMemberAdd", function(member)
 {
-  let memberRole = message.member.guild.roles.find(ch => ch.name === "Producteur ✔️");
-    message.member.addRole(memberRole);  
+  let memberRole = member.guild.roles.find(ch => ch.name === "Producteur ✔️");
+    member.addRole(memberRole);  
 });    
 
 const prefix = "b!";
@@ -35,8 +35,8 @@ if (msg.startsWith (prefix + "send")) {
     mention.sendMessage (mention + ' Vous avez été validé, vous êtes maintenant producteur confirmé.');
     message.channel.send ("Confirmation envoyée !");
     
-    let memberRole = message.member.guild.roles.find(ch => ch.name === "Producteur ✔️");
-    message.member.addRole(memberRole.id);
+    let memberRole = member.guild.roles.find(ch => ch.name === "Producteur ✔️");
+    member.addRole(memberRole.id);
 
 }
 
