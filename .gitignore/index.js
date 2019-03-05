@@ -1,7 +1,6 @@
 const Discord = require ('discord.js');
-
 var client = new Discord.Client();
-
+const prefix = "b!";
 client.login(process.env.TOKEN)
 
 client.on ("ready",() => {
@@ -12,13 +11,12 @@ client.user.setActivity("created by sneaky");
 
 });
 
-client.on("guildMemberAdd", function(member)
-{
-  let memberRole = message.member.guild.roles.find("name", "Producteur ✔️");
-    message.member.addRole(memberRole);  
+client.on("guildMemberAdd", member =>{
+  let role =member.guild.roles.find(r => r.name= "Producteur ✔️");
+member.addRole(role);  
 });    
 
-const prefix = "b!";
+
 
 client.on ("message",(message) => {
 
