@@ -25,7 +25,7 @@ client.on ("message",(message) => {
 
 
 if (msg.startsWith (prefix + "send")) {
-    if(!message.member.hasPermission("ADMINISTRATOR")return message.reply("Tu n’as pas la permission, salfou va ! ")
+    if(!message.member.hasPermission("ADMINISTRATOR"))return message.reply("Tu n’as pas la permission, salfou va ! ")
     message.delete()
 
     const member = message.mentions.users.first()
