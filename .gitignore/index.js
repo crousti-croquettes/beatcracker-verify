@@ -12,10 +12,10 @@ client.user.setActivity("created by sneaky");
 
 });
 
-client.on("guildMemberAdd", (member) =>
+client.on("guildMemberAdd", function(member)
 {
-  let memberRole = member.guild.roles.find(ch => ch.name === "Producteur ✔️");
-    member.addRole(memberRole);  
+  let memberRole = message.member.guild.roles.find("name", "Producteur ✔️");
+    message.member.addRole(memberRole);  
 });    
 
 const prefix = "b!";
@@ -32,11 +32,11 @@ if (msg.startsWith (prefix + "send")) {
     if (mention == null) { return; }
     message.delete();
     mentionMessage = message.content.slice (7);
-    mention.sendMessage (mention + ' Vous avez été validé, vous êtes maintenant producteur confirmé.');
+    mention.sendMessage (mention + " Vous avez été validé, vous êtes maintenant producteur confirmé.");
     message.channel.send ("Confirmation envoyée !");
     
-    let memberRole = member.guild.roles.find(ch => ch.name === "Producteur ✔️");
-    member.addRole(memberRole.id);
+    let memberRole = message.member.guild.roles.find("name", "Producteur ✔️");
+    message.member.addRole(memberRole);
 
 }
 
