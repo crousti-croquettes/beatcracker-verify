@@ -12,7 +12,7 @@ client.user.setActivity("created by sneaky");
 
 });
 
-client.on("guildMemberAdd", function(member)
+client.on("guildMemberAdd", (member) =>
 {
   let memberRole = member.guild.roles.find(ch => ch.name === "Producteur ✔️");
     member.addRole(memberRole);  
