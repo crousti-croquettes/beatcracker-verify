@@ -7,7 +7,7 @@ function getAllMethods(object) {
         return typeof object[property] == 'function';
     });
 }
-client.login("NTUxMjIxNjc0MzU2Mzc1NTUy.D15bpA.uRsAC191xsWJ867Ib3X5C7kzxNY")
+client.login(process.env.TOKEN)
 
 client.on ("ready",() => {
 
