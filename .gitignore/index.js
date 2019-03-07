@@ -13,7 +13,7 @@ client.user.setActivity("created by sneaky");
 
 client.on("guildMemberAdd", member =>{
  
-member.addRole("551128131046473739")
+//member.addRole("551128131046473739")
 });
 
 
