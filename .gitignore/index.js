@@ -27,7 +27,7 @@ client.on ("message",(message) => {
 if (msg.startsWith (prefix + "send")) {
     message.delete()
 
-    const member = message.mentions.users.first()
+    const member = message.mentions.members.first()
     if(!member) return
     member.send(member + " Vous avez été validé, vous êtes maintenant producteur confirmé.");
     message.channel.send ("Confirmation envoyée !");
