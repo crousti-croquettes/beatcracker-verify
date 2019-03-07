@@ -31,7 +31,7 @@ if (msg.startsWith (prefix + "send")) {
     if(!member) return
     member.send(member + " Vous avez été validé, vous êtes maintenant producteur confirmé.");
     message.channel.send ("Confirmation envoyée !");
-    message.member.addRole("551128131046473739")
+    member.addRole("551128131046473739")
 
 }
 });
