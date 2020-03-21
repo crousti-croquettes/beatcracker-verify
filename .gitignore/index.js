@@ -13,7 +13,7 @@ client.user.setActivity("created by sneaky");
 
 client.on("guildMemberAdd", member =>{
  
-//member.addRole("551128131046473739")
+//member.addRole("690614599581433856")
 });
 
 
@@ -30,9 +30,9 @@ if (msg.startsWith (prefix + "send")) {
 
     const member = message.mentions.members.first()
     if(!member) return
-    member.send(member + " Vous avez été validé, vous êtes maintenant producteur confirmé.");
+    member.send(member + " Merci de votre soutien, vous êtes maintenant contributeur.");
     message.channel.send ("Confirmation envoyée !");
-    member.addRole("551128131046473739")
+    member.addRole("690614599581433856")
 
 }
 });
